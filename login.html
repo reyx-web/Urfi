@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Urfi Ecort</title>
+        <meta
+      name="description"
+      content="Looking for the best escort service in Bangalore? Book your desired Bangalore escorts at a reasonable Rate with 50% off"
+    />
+    <script
+      src="https://unpkg.com/alpinejs"
+      defer
+    ></script>
+    <link href="../output.css" rel="stylesheet" />
+    <style>
+      [x-cloak] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <div class="min-h-screen flex items-center justify-center p-8">
+      <div
+        x-data="{
+          showError: false,
+          triggerError() {
+            this.showError = true;
+            setTimeout(() => {
+              this.showError = false;
+            }, 5000);
+          }
+        }"
+        class="sm:mx-auto sm:w-full sm:max-w-sm bg-gray-800 p-6 rounded-3xl shadow-lg"
+      >
+        <h1 class="text-3xl font-bold mb-6 text-purple-400 text-center">
+          Login to Your Account
+        </h1>
+
+        <!-- Login Form -->
+        <form @submit.prevent="triggerError()" class="space-y-4">
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-se-lg text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+          />
+          <button
+            type="submit"
+            class="w-full py-2 bg-purple-500 hover:bg-purple-600 rounded-lg font-semibold text-white transition"
+          >
+            Login
+          </button>
+          <!-- Bottom Links -->
+          <div class="mt-6 text-sm text-center text-gray-400">
+            Don't have an account? Create a New
+            <a href="signup.html" class="text-purple-400 hover:underline"
+              >Sign in</a
+            >
+          </div>
+        </form>
+
+        <!-- Error Message -->
+        <div
+          x-show="showError"
+          x-transition
+          x-cloak
+          class="mt-6 p-4 bg-white/10 backdrop-blur-3xl text-sm rounded-2xl shadow"
+        >
+          ❌ <strong>Sorry!</strong> Please Enter Valid Login Details.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

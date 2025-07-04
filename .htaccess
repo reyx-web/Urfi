@@ -1,0 +1,4 @@
+# Backup your .htaccess!
+# Use only this for a minute:
+RewriteEngine On
+AddDefaultCharset UTF-8
