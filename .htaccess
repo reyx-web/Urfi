@@ -1,4 +1,3 @@
-# Backup your .htaccess!
-# Use only this for a minute:
 RewriteEngine On
-AddDefaultCharset UTF-8
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
