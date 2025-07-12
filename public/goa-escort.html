@@ -53,29 +53,34 @@
     class="bg-gradient-to-b from-black via-gray-900 to-black font-sans text-white select-none"
   >
     <!-- Navbar -->
-    <nav class="fixed top-0 left-0 w-full z-50" x-data="{ open: false }">
+  <nav class="fixed top-0 left-0 w-full z-50" x-data="{ open: false }">
       <div
-        class="pointer-events-none absolute inset-0 rounded-b-xl bg-white/5"
+        class="pointer-events-none absolute inset-0 rounded-b-xl bg-white"
       ></div>
 
       <div
         class="rounded-b-xl border-b border-purple-500/30 bg-transparent shadow-xl backdrop-blur-xl"
       >
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div class="flex h-16 items-center justify-between">
+          <div class="flex h-24 items-center justify-between">
             <!-- Logo -->
             <div class="flex items-center">
-              <a
-                href="/"
-                class="text-3xl p-4 font-bold tracking-tight text-purple-400"
-              >
-                Urfi Escort
+              <a href="/">
+                <img
+                  loading="lazy"
+                  alt="Urfi Escort Logo"
+                  class="h-20 w-20 select-none"
+                  draggable="false"
+                  oncontextmenu="return false"
+                  src="photos/urfi-logo.png"
+                />
               </a>
             </div>
 
             <!-- Desktop: Search & Dropdown -->
             <div class="hidden md:flex flex-1 items-center gap-2">
               <select
+                aria-label="State"
                 @change="if($event.target.value) window.location.href = $event.target.value"
                 class="rounded-xl border border-purple-500 bg-black/50 px-4 py-2 text-sm text-white focus:outline-none"
               >
@@ -87,43 +92,41 @@
                 <option value="chennai-escort.html">Chennai</option>
                 <option value="/">Bangalore</option>
               </select>
-              <input
-                type="text"
-                placeholder="Search your city"
-                class="flex-1 min-w-0 rounded-xl border border-purple-500 bg-black/40 px-4 py-2 text-sm text-white placeholder-gray-400 focus:outline-none"
-              />
             </div>
 
             <!-- Desktop: CTA Buttons -->
             <div class="hidden items-center space-x-2 md:flex">
               <a
-                href="signup.html"
+                href="about.html"
                 class="rounded-lg bg-purple-400 px-4 py-2 text-sm font-medium text-black shadow transition-all duration-200 hover:bg-purple-300"
-                >Sign Up</a
+                >about us</a
               >
               <a
-                href="login.html"
-                class="rounded-lg bg-purple-400 px-4 py-2 text-sm font-medium text-black shadow transition-all duration-200 hover:bg-purple-300"
-                >Log In</a
-              >
-              <a
-                href="login.html"
+                href="goa-escort.html"
                 class="rounded-lg bg-purple-700 px-4 py-2 text-sm font-semibold shadow transition-all duration-200 hover:bg-purple-800"
-                >Post Ad</a
+                >Service</a
               >
             </div>
 
             <!-- Mobile: Post Ad + Hamburger Toggle -->
-            <div class="md:hidden flex items-center space-x-2">
+            <div
+              class="md:hidden flex items-center space-x-2"
+              aria-label="menu"
+              id="menu"
+            >
               <a
-                href="login.html"
+                href="about.html"
                 class="rounded-lg bg-purple-700 px-4 py-2 text-xs font-semibold shadow hover:bg-purple-800"
               >
-                Post Ad
+                about
               </a>
+
               <button
                 @click="open = !open"
-                class="text-white focus:ring-2 focus:ring-purple-500 focus:outline-none transition duration-300"
+                id="menu"
+                name="menu"
+                :aria-label="open ? 'Close main menu' : 'Open main menu'"
+                class="text-purple-500 focus:ring-2 focus:ring-purple-500 focus:outline-none transition duration-300"
               >
                 <!-- Hamburger Icon -->
                 <template x-if="!open">
@@ -169,6 +172,7 @@
           class="fade-in space-y-3 border-purple-500 px-4 py-6 md:hidden rounded-b-2xl"
         >
           <select
+            aria-label="State"
             @change="if($event.target.value) window.location.href = $event.target.value"
             class="w-full rounded-xl border border-purple-500 bg-black/50 px-4 py-2 text-sm text-white focus:outline-none"
           >
@@ -180,20 +184,10 @@
             <option value="chennai-escort.html">Chennai</option>
             <option value="/">Bangalore</option>
           </select>
-          <input
-            type="text"
-            placeholder="Search your city"
-            class="w-full rounded-xl border border-purple-500 bg-black/40 px-4 py-2 text-sm text-white focus:outline-none"
-          />
           <a
-            href="signup.html"
+            href="goa-escort.html"
             class="block w-full rounded-lg bg-purple-400 py-2 px-4 text-center text-sm font-medium text-black shadow transition hover:bg-purple-300"
-            >Sign Up</a
-          >
-          <a
-            href="login.html"
-            class="block w-full rounded-lg bg-purple-400 py-2 px-4 text-center text-sm font-medium text-black shadow transition hover:bg-purple-300"
-            >Login</a
+            >Services</a
           >
         </div>
       </div>
