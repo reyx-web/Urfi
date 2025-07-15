@@ -3,9 +3,6 @@ module.exports = {
   content: ["./**/*.html", "./src/**/*.{{html,js,jsx,ts,tsx,vue,astro}"],
   theme: {
     extend: {
-      transitionProperty: {
-        "background-position": "background-position",
-      },
     },
   },
   plugins: [
