@@ -1,28 +1,14 @@
 {
-  "name": "urfi-escort",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.2.0",
+    "tailwindcss": "^4.1.11"
+  },
   "scripts": {
     "build": "tailwindcss -i ./input.css -o ./public/output.css",
     "dev": "npm run build"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@material-tailwind/html": "^3.0.0-beta.7",
-    "@tailwindcss/forms": "^0.5.10",
-    "@tailwindcss/typography": "^0.5.16",
-    "@vercel/analytics": "^1.5.0",
-    "@vercel/speed-insights": "^1.2.0",
-    "alpinejs": "^3.14.9",
-    "postcss-merge-rules": "^7.0.5"
-  },
+    },
   "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "prettier": "^3.6.2",
-    "prettier-plugin-tailwindcss": "^0.6.13",
-    "tailwindcss": "^4.1.11"
   }
 }
