@@ -6,7 +6,7 @@
     "tailwindcss": "^4.1.11"
   },
   "scripts": {
-  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css"
+  "build": "tailwindcss -i ./input.css -o ./public/output.css"
   },
   "devDependencies": {
   }
