@@ -23,12 +23,9 @@ Disallow:
 
 # Block all other bots
 User-agent: *
-Disallow: /
+Disallow:
 
 # Additional folder-specific blocks (for all bots except allowed ones)
 User-agent: *
 Disallow: /logs/
 Disallow: /ssl/
-
-# ✅ Your sitemap for search engines
-Sitemap: https://www.ckoks.com/sitemap.xml
