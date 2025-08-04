@@ -2,11 +2,6 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [
-        {
-          "type": "missing"
-        }
-      ],
       "destination": "/",
       "permanent": false
     },
