@@ -1,0 +1,72 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "missing"
+        }
+      ],
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/hyderabad-escort-34",
+      "destination": "/hyderabad-escort.html",
+      "permanent": true
+    },
+    {
+      "source": "/goa-escort",
+      "destination": "/goa-escort.html",
+      "permanent": true
+    },
+    {
+      "source": "/mumbai-escort",
+      "destination": "/mumbai-escort.html",
+      "permanent": true
+    },
+    {
+      "source": "/vadodara-escort",
+      "destination": "/vadodara-escort.html",
+      "permanent": true
+    },
+    {
+      "source": "/hyderabad-escort",
+      "destination": "/hyderabad-escort.html",
+      "permanent": true
+    },
+    {
+      "source": "/college-call-girl/",
+      "destination": "/bangalore-call-girl.html",
+      "permanent": true
+    },
+    {
+      "source": "/independent-call-girl/",
+      "destination": "/independent-escorts-bangalore.html",
+      "permanent": true},
+    {
+      "source": "/goa-escort-post",
+        "destination": "/goa-escort.html",
+        "permanent": true},
+    {
+      "source": "/russian-call-girl/",
+      "destination": "bangalore-escorts.html",
+      "permanent": true
+    },
+    {
+      "source": "/cheap-call-girl",
+      "destination": "/bangalore-escort.html",
+      "permanent": true
+    },
+    {
+      "source": "/mumbai-escort-posts",
+      "destination": "/mumbai-escort.html",
+      "permanent": true
+    },
+    {
+      "source": "/jubillee-hills-bangalore-2000-unlimited-short-full-enjoment",
+      "destination": "/bangalore-escort-service.html",
+      "permanent": true
+    }
+  ]
+}
