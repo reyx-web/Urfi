@@ -1,10 +1,6 @@
 {
   "redirects": [
-    {
-      "source": "/:path((?!output\\.css|favicon\\.ico|robots\\.txt|.*\\.(js|css|png|jpg|svg)).*)",
-      "destination": "/",
-      "permanent": false
-    },
+ 
     {
       "source": "/hyderabad-escort-34",
       "destination": "/hyderabad-escort.html",
