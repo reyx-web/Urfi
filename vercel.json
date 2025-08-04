@@ -1,4 +1,4 @@
-{
+{ 
   "redirects": [
     {
       "source": "/hyderabad-escort-34",
@@ -58,6 +58,17 @@
     {
       "source": "/jubillee-hills-bangalore-2000-unlimited-short-full-enjoment",
       "destination": "/bangalore-escort-service.html",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "urfijaved.in"
+        }
+      ],
+      "destination": "https://www.urfijaved.in/$1",
       "permanent": true
     }
   ]
