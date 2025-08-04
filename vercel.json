@@ -1,14 +1,10 @@
 {
   "redirects": [
- {
-  "redirects": [
     {
       "source": "/:path((?!output\\.css|favicon\\.ico|robots\\.txt|.*\\.(js|css|png|jpg|svg)).*)",
       "destination": "/",
       "permanent": false
-    }
-  ]
-},
+    },
     {
       "source": "/hyderabad-escort-34",
       "destination": "/hyderabad-escort.html",
@@ -42,14 +38,16 @@
     {
       "source": "/independent-call-girl/",
       "destination": "/independent-escorts-bangalore.html",
-      "permanent": true},
+      "permanent": true
+    },
     {
       "source": "/goa-escort-post",
-        "destination": "/goa-escort.html",
-        "permanent": true},
+      "destination": "/goa-escort.html",
+      "permanent": true
+    },
     {
       "source": "/russian-call-girl/",
-      "destination": "bangalore-escorts.html",
+      "destination": "/bangalore-escorts.html",
       "permanent": true
     },
     {
