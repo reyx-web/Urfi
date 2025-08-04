@@ -1,7 +1,7 @@
 {
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/:path((?!output\\.css).*)",
       "destination": "/",
       "permanent": false
     },
